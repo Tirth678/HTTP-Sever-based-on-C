@@ -6,16 +6,16 @@
 #include<fcntl.h>
 #include<unistd.h>
 #include<string.h>
-#define PORT 8000
+#define PORT 5500
 #define MAXIMUM_REQUET_SIZE 2048
 #define ROOT "./src"
 void handling(int sock){
     char request[MAXIMUM_REQUET_SIZE] = {0};
     recv(sock, request, MAXIMUM_REQUET_SIZE, 0);
 
-    char method[10], path[25], protocol[20];
+    char method[10], path[255], protocol[20];
     sscanf(request, "%s%s%s", method, path, protocol);
-    char filePath[225];
+    char filePath[265];
     sprintf(filePath, "%s%s", ROOT, path);
     if(strcmp(path, "/") == 0){
         sprintf(filePath, "%s/index.html", ROOT);
