@@ -6,6 +6,5 @@ Thanks for reading, have a great day.
  <br>
  <br>
  <br>
-    
-https://drive.google.com/file/d/14Glx19wFzsOH40lht67gLYKH3k6MdTid/view?usp=sharing
 
+Screenshot will be available when it will enter beta stage.
