@@ -54,7 +54,7 @@ int main(){
     serverAddr.sin_port = htons(PORT);
 
     if(bind(ServerSock, (struct sockAddr *)&serverAddr, sizeof(serverAddr)) == -1){
-        perror("Binding or binding failed\n");
+        perror("Binding failed\n");
         exit(EXIT_FAILURE);
     }
     if (listen(ServerSock, 10) < 0){
@@ -69,7 +69,7 @@ int main(){
             perror("Proposal declined...");
             exit(EXIT_FAILURE);
         }
-        // handling(clientSock);
+        handling(clientSock);
     }
     return 0;
 
