@@ -8,4 +8,4 @@ Thanks for reading, have a great day.
  <br>
  <br>
 
-Screenshot will be available when it will enter beta stage.
+
